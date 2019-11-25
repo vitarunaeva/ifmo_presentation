@@ -3,16 +3,20 @@
 @import "fonts";
 
 .container {
+  font-size: 16px;
   padding: 20px;
-  background: #000000;
-  color: #ffffff;
+  color: #000000;
 }
 
 .banner {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  color: #ffffff;
   height: 300px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 70px;
 
   &__logo {
     width: 320px;
@@ -42,7 +46,7 @@
 
     & a {
       text-decoration: none;
-      color: #ffffff;
+      color: #000000;
       text-align: center;
     }
   }
@@ -79,7 +83,7 @@
   }
 
   &--opacity {
-    background: rgba(255,255,255, 0.2);
+    background: rgba(0,212,255, 0.2);
 
     & .information-block__title {
       justify-content: flex-end;
@@ -127,6 +131,7 @@
 
 .text-accent {
   font-weight: bold;
+  font-size: 18px;
   @import "color-title";
 }
 
