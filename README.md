@@ -1,2 +1,2 @@
 # ifmo_presentation
-index.html
+app/index.html
