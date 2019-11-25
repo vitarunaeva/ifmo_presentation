@@ -2,15 +2,22 @@
 @import "libs";
 @import "fonts";
 
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 1.6em;
+  font-weight: 400;
+  color: #747b8c;
+}
+
 .container {
   font-size: 16px;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   color: #000000;
 }
 
 .banner {
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  background-color: #47347c;
   color: #ffffff;
   height: 300px;
   display: flex;
@@ -25,16 +32,22 @@
 }
 
 .scheme {
+  background: #ffffff none repeat scroll 0 0;
+  box-shadow: 0 9px 9px 0 #c7c7c7;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
   align-items: baseline;
+  width: 90%;
+  margin: -100px auto 0 auto;
 
   &__arrow {
     & .arrow {
       position: absolute;
-      margin-top: -86px;
-      margin-left: -12px;
+      margin-top: -64px;
+      margin-left: -24px;
       width: 30px;
     }
   }
@@ -42,7 +55,7 @@
   &__item {
     display: flex;
     flex-direction: column;
-    max-width: 112px;
+    max-width: 100px;
 
     & a {
       text-decoration: none;
@@ -59,16 +72,13 @@
   }
 
   &__item-icon {
-    padding: 16px;
-    border-radius: 16%;
-    max-width: 80px;
-    height: 80px;
+    padding: 7px;
+    max-width: 40px;
+    height: 40px;
     margin: 0 auto 20px auto;
-    line-height: 80px;
     position: relative;
-    max-height: 80px;
-
-    @import "background-icon";
+    border: 1px solid #F90079;
+    border-radius: 24%;
   }
 }
 
@@ -76,14 +86,19 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
-  padding: 20px;
+  margin-top: -64px;
+  padding: 50px 20px 50px 20px;
+
+  &.padding {
+    padding: 100px 20px 50px 20px;
+  }
 
   &:last-child {
     margin-bottom: 0;
   }
 
   &--opacity {
-    background: rgba(0,212,255, 0.2);
+    background: #47347c17;
 
     & .information-block__title {
       justify-content: flex-start;
@@ -105,13 +120,13 @@
     margin-right: 20px;
     border-radius: 13%;
     padding: 5px 10px;
-    @import "background-icon";
+    color: #F90079;
   }
 
   &__title-text {
     font-size: 24px;
     text-transform: uppercase;
-    @import "color-title";
+    color: #F90079;
   }
 }
 
@@ -132,8 +147,8 @@
 
 .text-accent {
   font-weight: bold;
-  font-size: 18px;
-  @import "color-title";
+  font-size: 20px;
+  color: #F90079;
 }
 
 @import "media";
