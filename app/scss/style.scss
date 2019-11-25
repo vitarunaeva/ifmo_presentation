@@ -86,6 +86,7 @@
     background: rgba(0,212,255, 0.2);
 
     & .information-block__title {
+      justify-content: flex-start;
       padding-right: 20px;
     }
   }
